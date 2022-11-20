@@ -1,0 +1,56 @@
+.container *,
+.container *::after,
+.container *::before {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  /* background-color: blue; */
+  height: 400px;
+  width: 1440px;
+  background-color: white;
+}
+
+.cards {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 60px;
+}
+
+.card {
+  flex: 0 1 250px;
+  padding: 20px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.card--active {
+  background-color: #ddf;
+  border: 1px solid blueviolet;
+  border-radius: 15px;
+}
+
+.card--hidden {
+  display: none;
+}
+
+.card__heading-1 {
+  margin-bottom: 10px;
+}
+
+.card__heading-2 {
+  margin-bottom: 5px;
+}
+
+.card__text {
+  margin-bottom: 10px;
+}
+
+.card__button {
+  background-color: blueviolet;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
